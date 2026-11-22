@@ -43,7 +43,8 @@ Landed cost = CJ item price **+ CJ shipping to a US address**, read from the liv
 revenue for cold traffic. Blended AOV target **$85–$110** (bed alone $89; fountain + refill $95;
 a $39 comb plus filters crosses the $50 free-shipping line). The Pulse Tail is the low-ticket entry
 point: at $24 it is **below the $50 free-shipping line**, so it either pays the $4.95 handling fee
-(a one-ball order totals $28.95, still 71% margin after fees) or rides along with a bigger order.
+(a one-ball order totals $28.95, still about 74% margin after fees) or rides along with a bigger
+order, where the handling fee disappears.
 
 † Verified price/weight pairs. The Blush pink SKU is lighter (234 g vs 317 g) and its freight was
 **estimated** from the verified Ceramic white rate (317 g → $10.07); item price is verified. Treat
@@ -112,8 +113,8 @@ pink as ≈$12.70 landed until a sample order confirms it.
 - Only one live variant (Magic Tail red), so the card shows a static `Colour — Magic Tail · red` line
   instead of a one-option `<select>`; `data-add="pulse"` falls back to the first catalog variant.
 - Watch-outs: a moving battery toy is the most likely thing in the range to arrive dead or noisy —
-  buy a sample, run ten cycles, and keep "quiet" claims modest. The 3-item range's PO-Box rule is
-  worth repeating in any reply to a customer who gives a PO Box address.
+  buy a sample, run ten cycles, and keep "quiet" claims modest. Repeat the PO-Box rule in any reply
+  to a customer who gives a PO Box address.
 
 ## 2. Where to source
 
