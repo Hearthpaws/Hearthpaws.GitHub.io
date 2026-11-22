@@ -20,7 +20,7 @@ Open `index.html` in any browser — no build step, no CDN, no third-party scrip
 
 ---
 
-## 1. Product lineup — one supplier, four SKUs
+## 1. Product lineup — one supplier, four product lines
 
 **Every purchasable item is a CJdropshipping product.** Orders can be fulfilled end-to-end from a
 single CJ account (`CJ6093490`, `chaeminleeandrew@gmail.com`) with no second supplier.
@@ -36,11 +36,14 @@ Landed cost = CJ item price **+ CJ shipping to a US address**, read from the liv
 | 2 | **SteamGroom 3-in-1** — Blush pink | `CJYD207827102BY` | $3.86 | ≈$8.90 † | **≈$12.70** | $39 | 67% | ≈$24.87 (64%) |
 | 3 | **Stillwater Fountain** — Circulation 2 L | `CJMY174605320TG` | $13.16 | $18.70 | **$31.86** | $79 | 60% | $44.55 (56%) |
 | 3 | **Stillwater Fountain** — Motion-sense 2 L | `CJMY174605325YB` | $16.92 | $19.64 | **$36.56** | $89 | 59% | $49.56 (56%) |
+| 4 | **The Pulse Tail** — Magic Tail red | `CJMY212708201AZ` | $0.95 | $5.26 | **$6.21** | $24 | 74% | $16.79 (70%) |
 | + | **Fountain Filter Refill** (cotton set) | `CJMY174605312LO` | $2.94 | $6.47 | **$9.41** | $16 | 41% | $5.83 (36%) |
 
 \* Card fee assumed at Stripe/PayPal 2.9% + $0.30. **Ad spend is not included** — budget 15–25% of
 revenue for cold traffic. Blended AOV target **$85–$110** (bed alone $89; fountain + refill $95;
-a $39 comb plus filters crosses the $50 free-shipping line).
+a $39 comb plus filters crosses the $50 free-shipping line). The Pulse Tail is the low-ticket entry
+point: at $24 it is **below the $50 free-shipping line**, so it either pays the $4.95 handling fee
+(a one-ball order totals $28.95, still 71% margin after fees) or rides along with a bigger order.
 
 † Verified price/weight pairs. The Blush pink SKU is lighter (234 g vs 317 g) and its freight was
 **estimated** from the verified Ceramic white rate (317 g → $10.07); item price is verified. Treat
@@ -95,6 +98,23 @@ pink as ≈$12.70 landed until a sample order confirms it.
 
 ---
 
+**4. The Pulse Tail — motion-woken rolling cat ball, "Magic Tail" red**
+- A 68 g PC ball on a clear base with a soft silicone tail; it rolls and swings the tail on its own
+  and wakes on touch. Three modes (**fast / slow / touch-wake**), an optional bird-chirp sound that
+  can be muted, auto-rest after 5 minutes, and it wakes again every 2 hours.
+- Works on hard floors and low-pile rugs — **thick carpet stops it**; say so rather than widening the
+  claim.
+- Built-in battery ("battery contains" on the listing). The supplier does **not** state the charging
+  method, so do not write "USB rechargeable" or give a charge time until a sample confirms it.
+- **Shipping restriction: US street addresses only — no PO Boxes.** The supplier's listing says the
+  carrier cannot deliver this SKU to a PO Box. That restriction is on the product card and in a
+  dedicated FAQ entry; keep both if the card is copied elsewhere.
+- Only one live variant (Magic Tail red), so the card shows a static `Colour — Magic Tail · red` line
+  instead of a one-option `<select>`; `data-add="pulse"` falls back to the first catalog variant.
+- Watch-outs: a moving battery toy is the most likely thing in the range to arrive dead or noisy —
+  buy a sample, run ten cycles, and keep "quiet" claims modest. The 3-item range's PO-Box rule is
+  worth repeating in any reply to a customer who gives a PO Box address.
+
 ## 2. Where to source
 
 | Supplier | Use it for | Notes |
@@ -102,8 +122,8 @@ pink as ≈$12.70 landed until a sample order confirms it.
 | **CJdropshipping** (`CJ6093490`) | **Everything on the store** | One account, one saved card (`mastercard 2526`), tracked shipping, 1–4 day processing. Product pages show live inventory and freight to the US. |
 | CJ US warehouse | — | Checked and rejected for these categories (see above). Worth re-checking quarterly — US stock would cut 5–7 days off delivery. |
 
-Rule of thumb: keep the range at three hero SKUs plus one refill. Add a product only when it is a CJ
-SKU whose landed cost is ≤ 45% of the planned retail price.
+Rule of thumb: keep the range at four hero SKUs plus one refill. Add a product only when it is a CJ
+SKU whose landed cost is ≤ 45% of the planned retail price (the Pulse Tail lands at 26% of $24).
 
 ---
 
@@ -144,9 +164,10 @@ Everything lives in `index.html`.
 - **Handling fee under $50:** `var SHIP_FEE = 4.95;`
 - **Cart storage key:** `hearthpaws-cart-v2` (bump it whenever the SKU list changes, so stale carts
   holding retired items are dropped).
-- **Images:** `assets/haven-bed.jpg`, `assets/steamgroom.jpg`, `assets/fountain-life.jpg`
-  (cards) and `assets/fountain-product.jpg` (cart thumb). Replace them with a square photo of the
-  exact SKU you ship.
+- **Images:** `assets/haven-bed.jpg`, `assets/steamgroom.jpg`, `assets/fountain-life.jpg`,
+  `assets/pulse-tail.jpg` (cards) and `assets/fountain-product.jpg` (cart thumb). Replace them with a
+  square photo of the exact SKU you ship. The Pulse Tail photo is the supplier's 760 × 760 listing
+  shot for `CJMY212708201AZ`.
 - **Colours / type:** CSS custom properties in `:root`.
 - **Illustrations:** the hero SVG and the filters cart thumbnail are still inline SVG.
 

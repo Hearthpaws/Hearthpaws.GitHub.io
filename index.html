@@ -4,14 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>HearthPaws — Premium comfort for the pets who wait for you</title>
-<meta name="description" content="HearthPaws makes three quiet upgrades for everyday pet care: a plush crystal-velvet Haven Bed, the SteamGroom 3-in-1 misting brush, and the Stillwater 2 L stainless fountain. Free US shipping over $50 · 30-day Happy Pet Guarantee.">
+<meta name="description" content="HearthPaws makes four quiet upgrades for everyday pet care: a plush crystal-velvet Haven Bed, the SteamGroom 3-in-1 misting brush, the Stillwater 2 L stainless fountain, and The Pulse Tail, a motion-woken cat ball with a wagging tail. Free US shipping over $50 · 30-day Happy Pet Guarantee.">
 <meta name="theme-color" content="#33452F">
 <link rel="canonical" href="https://hearthpaws.github.io/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="HearthPaws">
 <meta property="og:url" content="https://hearthpaws.github.io/">
 <meta property="og:title" content="HearthPaws — Premium comfort for the pets who wait for you">
-<meta property="og:description" content="Three quiet upgrades for everyday pet care: the plush crystal-velvet Haven Bed, the SteamGroom 3-in-1 misting brush, and the Stillwater 2 L stainless fountain. Free US shipping over $50 · 30-day Happy Pet Guarantee.">
+<meta property="og:description" content="Four quiet upgrades for everyday pet care: the plush crystal-velvet Haven Bed, the SteamGroom 3-in-1 misting brush, the Stillwater 2 L stainless fountain, and The Pulse Tail, a motion-woken cat ball with a wagging tail. Free US shipping over $50 · 30-day Happy Pet Guarantee.">
 <meta property="og:image" content="https://hearthpaws.github.io/assets/haven-bed.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2333452F'/%3E%3Cg fill='%23F7F1E6'%3E%3Cellipse cx='16' cy='21' rx='6' ry='4.6'/%3E%3Cellipse cx='9' cy='15' rx='2.6' ry='3.2'/%3E%3Cellipse cx='23' cy='15' rx='2.6' ry='3.2'/%3E%3Cellipse cx='12.5' cy='10' rx='2.3' ry='2.9'/%3E%3Cellipse cx='19.5' cy='10' rx='2.3' ry='2.9'/%3E%3C/g%3E%3C/svg%3E">
@@ -189,8 +189,8 @@
 
   /* ---------- products ---------- */
   .shop{background:var(--cream)}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1rem,1.8vw,1.5rem)}
-  @media (max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(.85rem,1.4vw,1.25rem)}
+  @media (max-width:1080px){.grid{grid-template-columns:1fr 1fr}}
   @media (max-width:640px){.grid{grid-template-columns:1fr}}
   .card{
     position:relative;display:flex;flex-direction:column;
@@ -220,7 +220,13 @@
   .compare{font-size:.82rem;color:var(--muted);text-decoration:line-through}
   .save{font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--clay-2);background:rgba(193,112,63,.1);padding:.16rem .45rem;border-radius:6px}
   .card p.desc{font-size:.86rem;color:var(--ink-soft);line-height:1.55}
+  .ship-note{display:flex;align-items:flex-start;gap:.35rem;font-size:.72rem;line-height:1.45;color:var(--clay-2);font-weight:600}
+  .ship-note svg{width:12px;height:12px;flex:none;margin-top:.18rem}
   .variant{display:flex;flex-direction:column;gap:.3rem;font-size:.74rem;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+  .fixed-var{
+    font-size:.85rem;font-weight:500;color:var(--ink);letter-spacing:0;text-transform:none;
+    background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:.6rem .75rem;
+  }
   .select-wrap{position:relative}
   .select-wrap::after{
     content:"";position:absolute;right:.85rem;top:50%;width:7px;height:7px;
@@ -538,7 +544,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Premium comfort, quietly made</p>
         <h1>A softer landing for the pets who <em>wait for you</em>.</h1>
-        <p class="lede">Three considered upgrades for everyday care — warmer rest, calmer grooming, and fresher water. Built for the small rituals that make a house feel like home.</p>
+        <p class="lede">Four considered upgrades for everyday care — warmer rest, calmer grooming, fresher water, and a game of chase. Built for the small rituals that make a house feel like home.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#shop">
             Shop the collection
@@ -639,7 +645,7 @@
       <div class="section-head">
         <div>
           <p class="eyebrow">The collection</p>
-          <h2>Three pieces. Every day, well used.</h2>
+          <h2>Four pieces. Every day, well used.</h2>
           <p class="lede">We keep the range small on purpose: only pieces that solve a real, repeatable problem — and that we would put in our own homes.</p>
         </div>
       </div>
@@ -746,6 +752,36 @@
             </div>
           </div>
         </article>
+
+        <!-- The Pulse Tail -->
+        <article class="card reveal" data-product="pulse">
+          <div class="card-media">
+            <span class="badge">Everyday play</span>
+            <img src="assets/pulse-tail.jpg" width="760" height="760" loading="lazy" alt="The Pulse Tail: a red PC-and-silicone cat ball on a clear base, its soft red tail swinging as a tabby reaches for it">
+          </div>
+          <div class="card-body">
+            <div>
+              <h3>The Pulse Tail</h3>
+              <p class="card-sub">Interactive cat ball · wagging tail</p>
+            </div>
+            <div class="price-row">
+              <span class="price">$24</span>
+            </div>
+            <p class="desc">A 68 g PC-and-silicone ball that rolls and swings its soft tail, so the chase carries on after you sit down. Three modes — fast, slow, and a touch-wake mode that sets it off when a paw lands — with an optional bird chirp you can switch off. It rests after five minutes and wakes again every two hours, and it runs on hard floors and low-pile rugs rather than thick carpet.</p>
+            <p class="ship-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7.8h.01M11.2 11.2H12v5"/></svg><span>Ships to US street addresses only — no PO Boxes.</span></p>
+            <div class="variant">
+              <span>Colour</span>
+              <div class="fixed-var">Magic Tail · red</div>
+            </div>
+            <div class="card-actions">
+              <button class="btn-add" data-add="pulse">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 8h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6.8a3 3 0 0 1 6 0V8"/></svg>
+                Add to bag
+              </button>
+              <span class="micro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12.5l5 5L20 6"/></svg>Tracked delivery · 5-11 days</span>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -843,7 +879,7 @@
       <div class="faq-list">
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">When will my order arrive?<span class="sign" aria-hidden="true"></span></button>
-          <div class="faq-a"><div><p>Every order is picked and packed by our fulfilment partner within 1-4 business days. Most arrive 4-9 days after dispatch — the bed can take up to 11 — and tracking is emailed as soon as your parcel ships.</p></div></div>
+          <div class="faq-a"><div><p>Every order is picked and packed by our fulfilment partner within 1-4 business days. Most arrive 4-9 days after dispatch — the bed and the Pulse Tail can take up to 11 — and tracking is emailed as soon as your parcel ships.</p></div></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">What if my pet won't use it?<span class="sign" aria-hidden="true"></span></button>
@@ -864,6 +900,10 @@
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">Do you ship outside the US?<span class="sign" aria-hidden="true"></span></button>
           <div class="faq-a"><div><p>At launch we ship to the contiguous United States only, with free shipping over $50. Canada is next on the list — join the email list and we'll tell you when it opens.</p></div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Can the Pulse Tail go to a PO Box?<span class="sign" aria-hidden="true"></span></button>
+          <div class="faq-a"><div><p>No — the carrier that handles this ball delivers to US street addresses only, so it cannot reach a PO Box. If the Pulse Tail is in your bag, please give a street address at checkout.</p></div></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false">Where are your products made?<span class="sign" aria-hidden="true"></span></button>
@@ -914,6 +954,7 @@
           <li><a href="#shop">The Haven Bed</a></li>
           <li><a href="#shop">SteamGroom 3-in-1</a></li>
           <li><a href="#shop">Stillwater Fountain</a></li>
+          <li><a href="#shop">The Pulse Tail</a></li>
           <li><a href="#shop">Filters &amp; refills</a></li>
         </ul>
       </div>
@@ -1023,6 +1064,12 @@
           sku: "CJMY174605325YB", landed: 36.56 }
       ]
     },
+    pulse: {
+      name: "The Pulse Tail",
+      art: "pulse",
+      variants: [ { id: "red", label: "Magic Tail \u00b7 red", price: 24, compare: 0,
+                    sku: "CJMY212708201AZ", landed: 6.21 } ]
+    },
     filters: {
       name: "Fountain Filter Refill",
       art: "filters",
@@ -1101,6 +1148,7 @@
     bed: '<img src="assets/haven-bed.jpg" alt="">',
     groom: '<img src="assets/steamgroom.jpg" alt="">',
     fountain: '<img src="assets/fountain-product.jpg" alt="">',
+    pulse: '<img src="assets/pulse-tail.jpg" alt="">',
     filters: '<svg viewBox="0 0 100 100" aria-hidden="true"><rect width="100" height="100" fill="#F1EEE5"/><g fill="none" stroke="#6E8570" stroke-width="3"><ellipse cx="50" cy="36" rx="22" ry="8"/><ellipse cx="50" cy="50" rx="22" ry="8"/><ellipse cx="50" cy="64" rx="22" ry="8"/></g></svg>'
   };
 
