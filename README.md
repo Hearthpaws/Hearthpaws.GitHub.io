@@ -215,7 +215,7 @@ on the same pages and match the table in §1.
 | **United Kingdom** | $3.79 | $12.06 | $19.36 | **open** (0.73–0.81 × US) |
 | **Canada** | $4.29 | $13.17 | $20.66 | **open** (0.83–0.89 × US) |
 | **Japan** | $3.81 | — | $9.47 | **open** |
-| **South Korea** | $2.55 | — | $6.40 | **open** |
+| **South Korea** | $2.55 | — | $6.40 | **open — except the Haven Bed** |
 | **Singapore** | $2.92 | $6.42 | $9.78 | **open** |
 | Australia | $5.67 | — | $20.77 | closed — Pulse Tail is above the US quote |
 | Germany | $5.73 | — | — | closed — Pulse Tail above US; quote also adds customs duty + clearance |
@@ -224,6 +224,12 @@ on the same pages and match the table in §1.
 - **Transit seen on the quotes:** UK 4–9 days (CJPacket Ordinary), Canada 4–15 (JYSP Sensitive / Ordinary),
   Japan 4–5 (Ordinary), Singapore 5–10 (Asia Liquid / Eub), South Korea 8–12 (Eub) but **12–50 days for the
   bed** on the heavy line. US 4–9.
+- **Haven Bed blocked in South Korea (user instruction, 2026-11-27).** CJ's cheapest method for the 1,402 g
+  Haven Bed to KR (CJPacket Eub) quotes **12–50 days**, so the bed is not sold to South Korea even though the
+  country is otherwise open. Implemented in `index.html` as `NOT_IN = { KR: ["bed"] }`: the bed card carries a
+  "Ships to US, CA, UK, JP & SG · Not available in South Korea" note, the bag marks the bed line and disables
+  *Checkout with PayPal* with an explanatory notice whenever *Deliver to* is South Korea, and the two shipping
+  FAQ answers say the same. Every other product still ships to all six countries.
 - **Middle weights are interpolated, not individually quoted.** The three measured points per country sit
   in the same narrow band below the US rate, and the site's prices carry 4–9 % net margin, so the band is
   the buffer. Re-quote the exact SKU in CJ before the first order to any new country; the CJ freight tables
@@ -237,6 +243,9 @@ on the same pages and match the table in §1.
 - **Checkout guard:** the drawer has a *Deliver to* select listing only these six countries; the chosen
   code is sent to PayPal in the `custom` field ("Ship to CA (Canada)") so the order mail says where it goes.
   PayPal's Cart Upload cannot restrict the buyer's address by itself — the select is a prompt, not a lock.
+  Country-level product rules (today: no Haven Bed to KR) are enforced in the drawer by disabling the
+  checkout button and refusing to build the form while a blocked line is in the bag — a nudge, not a server
+  check, so an order that arrives anyway with a KR address and a bed is a support case, not a bug in PayPal.
 
 ## 3. Where to source
 
