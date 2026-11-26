@@ -20,47 +20,65 @@ Open `index.html` in any browser — no build step, no CDN, no third-party scrip
 
 ---
 
-## 1. Product lineup — one supplier, four product lines
+## 1. Product lineup — one supplier, fourteen products
 
 **Every purchasable item is a CJdropshipping product.** Orders can be fulfilled end-to-end from a
 single CJ account (`CJ6093490`, `chaeminleeandrew@gmail.com`) with no second supplier.
 
+**Pricing rule in force (2026-11-27, user instruction): net margin must be under 10% on every variant.**
+Net = retail × 0.971 − 0.30 (PayPal 2.9% + $0.30) − landed cost. Nothing may sell at a loss, so each
+retail price is the whole- or half-dollar step that lands between roughly 4% and 9%.
+
 Landed cost = CJ item price **+ CJ shipping to a US address**, read from the live product page
-("Total: $…", ship-to US, cheapest available method) on 2026-11-22.
+("Total: $…", ship-to US, cheapest available method) on **2026-11-27** for every line below — the
+whole table was re-measured that day, and several landed costs had moved since the 2026-11-22 figures
+(CJ posted shipping-price adjustments on 23, 24 and 25 Nov).
 
-| # | Product (store name) | CJ SKU | CJ item | CJ ship to US | Landed | Retail | Gross margin | After card fees* |
+| # | Product (store name) | CJ SKU | CJ item | CJ ship to US | Landed | Retail | Net after fees | Net margin |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **The Haven Bed** — Medium 20 in (50 cm) | `CJJJCWMY01390-Grey50cm` | $5.61 | $19.00 | **$24.61** | $49 | 50% | $22.67 (46%) |
-| 1 | **The Haven Bed** — Large 26 in (65 cm) | `CJJJCWMY01390-Grey 65cm` | $6.08 | $25.58 | **$31.66** | $59 | 46% | $25.33 (43%) |
-| 2 | **SteamGroom 3-in-1** — Ceramic white | `CJYD207827101AZ` | $3.86 | $10.07 | **$13.93** | $24 | 42% | $9.07 (38%) |
-| 2 | **SteamGroom 3-in-1** — Blush pink | `CJYD207827102BY` | $3.86 | ≈$8.90 † | **≈$12.70** | $24 | 47% | ≈$10.30 (43%) |
-| 3 | **Stillwater Fountain** — Circulation 2 L | `CJMY174605320TG` | $13.16 | $18.70 | **$31.86** | $49 | 35% | $15.42 (31%) |
-| 3 | **Stillwater Fountain** — Motion-sense 2 L | `CJMY174605325YB` | $16.92 | $19.64 | **$36.56** | $54 | 32% | $15.57 (29%) |
-| 4 | **The Pulse Tail** — Magic Tail red | `CJMY212708201AZ` | $0.95 | $5.26 | **$6.21** | $15 | 59% | $8.05 (54%) |
-| + | **Fountain Filter Refill** (cotton set) | `CJMY174605312LO` | $2.94 | $6.47 | **$9.41** | $16 | 41% | $5.83 (36%) |
+| 1 | **The Haven Bed** — Medium 20 in (50 cm) | `CJJJCWMY01390-Grey50cm` | $5.61 | $19.60 | **$25.21** | $28 | $1.68 | 6.0% |
+| 1 | **The Haven Bed** — Large 26 in (65 cm) | `CJJJCWMY01390-Grey 65cm` | $6.08 | $24.86 | **$30.94** | $35 | $2.75 | 7.8% |
+| 2 | **SteamGroom 3-in-1** — Ceramic white | `CJYD207827101AZ` | $3.86 | $8.58 | **$12.44** | $14 | $0.85 | 6.1% |
+| 2 | **SteamGroom 3-in-1** — Blush pink | `CJYD207827102BY` | $3.86 | $7.25 | **$11.11** | $13 | $1.21 | 9.3% |
+| 3 | **Stillwater Fountain** — Circulation 2 L | `CJMY174605320TG` | $13.16 | $17.12 | **$30.28** | $34 | $2.43 | 7.2% |
+| 3 | **Stillwater Fountain** — Motion-sense 2 L | `CJMY174605325YB` | $16.92 | $17.86 | **$34.78** | $39 | $2.79 | 7.2% |
+| 4 | **The Pulse Tail** — Magic Tail red | `CJMY212708201AZ` | $0.95 | $5.16 | **$6.11** | $7 | $0.39 | 5.5% |
+| 5 | **Trailhead Harness & Lead** — L, blue/mustard | `CJSB217533304DW` | $2.13 | $7.10 | **$9.23** | $10.50 | $0.67 | 6.3% |
+| 6 | **Stillwater Maze Bowl** — slow feeder, green | `CJGY174846501AZ` | $1.29 | $8.80 | **$10.09** | $11.50 | $0.78 | 6.8% |
+| 7 | **Fish Lick Mat** — teal silicone | `CJGY189089701AZ` | $7.98 | ≈$3.00 | **$10.98** | $12.50 | $0.86 | 6.9% |
+| 8 | **Tumble Treat** — treat tumbler, 200 g | `CJYD196344901AZ` | $2.39 | $7.17 | **$9.56** | $11 | $0.82 | 7.5% |
+| 9 | **Lure Pod** — feather teaser, pink | `CJYD235480702BY` | $3.25 | $7.37 | **$10.62** | $12 | $0.73 | 6.1% |
+| 10 | **Sisal Scratch Mat** — L, natural | `CJMY107357801AZ` | $8.05 | $14.81 | **$22.86** | $26 | $2.09 | 8.0% |
+| 11 | **Litter Trap Mat** — grey, 46 × 60 cm | `CJJCWMY00030-46x60cm-Foldable gray` | $4.68 | $8.93 | **$13.61** | $15.50 | $1.14 | 7.4% |
+| 12 | **Carry-Out Cat Bag** — L, blue | `CJMY112580406FU` | $6.30 | $11.49 | **$17.79** | $20 | $1.33 | 6.7% |
+| 13 | **TrailSip Bottle** — 800 ml, blue-grey | `CJJT171012401AZ` | $3.99 | $10.52 | **$14.51** | $16.50 | $1.21 | 7.3% |
+| 14 | **Knit Trio** — plush set of three | `CJWJWJMR00974-Set` | $3.37 | $7.46 | **$10.83** | $12 | $0.52 | 4.4% |
+| + | **Fountain Filter Refill** (cotton set) | `CJMY174605312LO` | $2.94 | $5.81 | **$8.75** | $10 | $0.66 | 6.6% |
 
-\* Card fee assumed at Stripe/PayPal 2.9% + $0.30. **Ad spend is not included** — budget 15–25% of
-revenue for cold traffic. With the 2026-11-27 price reset the blended AOV target is **$50–$70**
-(bed alone $49–$59; circulation fountain + refill $65; motion-sense fountain + refill $70). The Pulse
-Tail is the low-ticket entry point: at $15 it is **well below the $50 free-shipping line**, so it either
-pays the $4.95 handling fee (a one-ball order totals $19.95, still about 64% margin after fees) or
-rides along with a bigger order, where the handling fee disappears. Note the Medium Haven Bed at $49
-sits **$1 under** the $50 threshold, so a bed-only order also carries the $4.95 fee ($53.95 total)
-unless something else is added; the cart's free-shipping meter states this plainly.
+\* PayPal 2.9% + $0.30 per transaction. **Ad spend is not included, and at these margins there is no
+room for it:** every dollar of paid traffic has to come out of the $0.40–$2.80 left on each order.
+With a ≤10% ceiling the store is deliberately priced at roughly landed cost — it can win on organic
+traffic (Instagram, Pinterest, word of mouth) and on bundles, not on paid acquisition.
 
-† Verified price/weight pairs. The Blush pink SKU is lighter (234 g vs 317 g) and its freight was
-**estimated** from the verified Ceramic white rate (317 g → $10.07); item price is verified. Treat
-pink as ≈$12.70 landed until a sample order confirms it.
+**Price history.** 2026-11-27 morning: whole range cut to $49/$59, $49/$54, $24, $15 and a $16 refill
+(the "aggressive entry band"). Same day: the user set a **10% net-margin ceiling**, so every price was
+recomputed down again to $28/$35, $34/$39, $14/$13, $7 and a $10 refill, and ten new products were
+added at the same rule. Any Instagram, Pinterest or email copy made before this second cut still
+quotes the old numbers — do not reuse it.
 
-**Price reset — 2026-11-27.** The whole range moved to an aggressive lowest-price position:
-Haven Bed $89/$109 → **$49/$59**, Stillwater $79/$89 → **$49/$54**, SteamGroom $39 → **$24**,
-Pulse Tail $24 → **$15**. The $16 filter refill is unchanged — it is the repeat-purchase item, and at
-$9.41 landed it clears about $5.83 after card fees, so keep it as an add-on rather than a hero.
-`FREE_SHIP = 50` and `SHIP_FEE = 4.95` were kept as they were. Margins above are post-reset, so the
-shop now runs 32–59% gross (29–54% after card fees) instead of 59–74% — the bet is volume and lower
-friction at the $15–$59 impulse band, not margin per unit. The motion-sense fountain is the thinnest
-line at 32%; check it before pushing it in ads. Any Instagram/Pinterest copy or image made before
-this date still quotes the old prices; do not reuse it.
+### Watch-outs on the new lines
+
+- **Fish Lick Mat — the $3.00 freight is estimated from the SKU weight (104 g) and the 3-pack rate
+  shown on the same listing.** The single-colour SKU sits on the same 104 g body, so freight should
+  not differ, but confirm it on the first order.
+- **Sisal Scratch Mat ships in the supplier's "Random" colourway (natural oat tones).** Do not promise
+  a shade in replies.
+- **Carry-Out Cat Bag** has 40,000 factory units; the other cat-carrier candidate
+  (`CJJJCWGY02426`, black/blue/grey, $9.67–$12.04) showed **0 US inventory on every size**, which is
+  why it was not used.
+- **Knit Trio** is the thinnest line in the store (4.4%) because its landed cost is high for a $12
+  set; if CJ moves freight again, this is the one to re-price first.
+- The **Pulse Tail still ships to US street addresses only (no PO Boxes)** — the rule carries over.
 
 ### Sourcing notes — read before changing anything
 
@@ -128,6 +146,58 @@ this date still quotes the old prices; do not reuse it.
   buy a sample, run ten cycles, and keep "quiet" claims modest. Repeat the PO-Box rule in any reply
   to a customer who gives a PO Box address.
 
+**5. Trailhead Harness & Lead — nylon step-in harness with lead**
+- Padded nylon, single quick-release buckle, adjustable at chest and neck, metal D-ring between the
+  shoulders, lined lead handle. Sold in **L, blue & mustard** (`CJSB217533304DW`), 220 g, box
+  300 × 300 × 50 mm.
+- The supplier's own listing copy is thin (no reflective claim in the description — the title says
+  "reflective", the photos do not show it). **Do not claim reflective stitching** unless a sample
+  shows it.
+
+**6. Stillwater Maze Bowl — PP slow feeder**
+- Fish-shaped PP bowl with raised ridges and channels, three colours, 170 g, 230 × 230 × 50 mm.
+- Sold in green. Food-safe PP per the listing; no dishwasher claim on the page, so none in the store.
+
+**7. Fish Lick Mat — silicone enrichment mat**
+- Fish-shaped silicone mat with shallow wavy grooves, three colours, 104 g.
+- The listing says "silicone" and nothing about a suction base or freezer use — neither claim is on
+  the card.
+
+**8. Tumble Treat — treat-dispensing tumbler**
+- Nylon ends + ABS clear centre, 200 g, openings that twist wider or narrower, three sizes
+  (96 × 160 × 96 / 120 × 180 × 100 / 300 × 200 × 100 mm). Sold in Large.
+- 4,429 lists, 20 reviews, no disputes.
+
+**9. Lure Pod — rechargeable feather teaser + laser**
+- ABS, 240 g, 145 × 145 × 92 mm, **USB charging**, replaceable feather wand clipped to a swinging
+  arm, laser dot, automatic obstacle avoidance. Two colourways; sold in cherry blossom pink.
+- Battery item: buy a sample and check it holds a charge before pushing it in ads.
+
+**10. Sisal Scratch Mat — natural sisal**
+- Tight-woven natural sisal on a stitched border, sizes S/M/L/XL, **supplier default colour "Random"
+  (natural oat tones)**. Sold in L (706 g).
+- Doubles as a wrap: the listing shows it rolled around table and chair legs and fixed there.
+
+**11. Litter Trap Mat — two-layer EVA**
+- Honeycomb EVA top that traps litter, waterproof layer underneath, foldable, 339 g.
+- Sizes 46 × 60 cm and 55 × 70 cm, black or grey; sold in **grey, 46 × 60 cm, foldable**. The listing
+  also sells 2- and 3-packs — those are separate SKUs, not variants of this one.
+
+**12. Carry-Out Cat Bag — soft carrier**
+- Oxford cloth shell, nylon mesh on three sides, flat base, zip pocket, webbing handles.
+- Sizes S (39 × 17 × 27 cm) and L (44 × 17 × 29 cm), 570 g, grey / light red / blue; sold in
+  **blue, L**. 36 reviews.
+
+**13. TrailSip Bottle — 800 ml bottle + trough**
+- Food-grade plastic (ABS/HDPE per listing), folding trough, one-press water release with a lock
+  button, silicone seal, 210 g, 9 × 9 × 24 cm. Sold in blue-grey.
+
+**14. Knit Trio — three knitted plush squeaky toys**
+- Elephant + monkey + poodle, knitted plush with a squeaker in each body, set 226 g (60–94 g each),
+  box 280 × 220 × 50 mm.
+- **The CJ title still says "squeaky duck"** while the options are elephant, monkey and poodle — the
+  store copy was rewritten around the actual animals. Do not copy the CJ title.
+
 ## 2. Where to source
 
 | Supplier | Use it for | Notes |
@@ -135,9 +205,10 @@ this date still quotes the old prices; do not reuse it.
 | **CJdropshipping** (`CJ6093490`) | **Everything on the store** | One account, one saved card (`mastercard 2526`), tracked shipping, 1–4 day processing. Product pages show live inventory and freight to the US. |
 | CJ US warehouse | — | Checked and rejected for these categories (see above). Worth re-checking quarterly — US stock would cut 5–7 days off delivery. |
 
-Rule of thumb: keep the range at four hero SKUs plus one refill. Add a product only when it is a CJ
-SKU whose landed cost is ≤ 60% of the planned retail price (the Pulse Tail lands at 41% of $15; the
-motion-sense fountain is the tightest line at 68% — check it before any ad push).
+Rule of thumb: fourteen hero SKUs plus one refill, and **every retail price stays under a 10% net
+margin** (0% < margin < 10%, target 4–9%). When CJ moves freight or item price, re-check the landed
+cost before anything else: at these margins a $1 freight increase wipes a line out. Cheapest lines to
+re-price first are Knit Trio (4.4%), Pulse Tail (5.5%) and SteamGroom white (6.1%).
 
 ---
 
@@ -176,12 +247,14 @@ Everything lives in `index.html`.
   price markup is static HTML — update both when a price changes.
 - **Free-shipping threshold:** `var FREE_SHIP = 50;`
 - **Handling fee under $50:** `var SHIP_FEE = 4.95;`
-- **Cart storage key:** `hearthpaws-cart-v2` (bump it whenever the SKU list changes, so stale carts
+- **Cart storage key:** `hearthpaws-cart-v3` (bump it whenever the SKU list changes, so stale carts
   holding retired items are dropped).
-- **Images:** `assets/haven-bed.jpg`, `assets/steamgroom.jpg`, `assets/fountain-life.jpg`,
-  `assets/pulse-tail.jpg` (cards) and `assets/fountain-product.jpg` (cart thumb). Replace them with a
-  square photo of the exact SKU you ship. The Pulse Tail photo is the supplier's 760 × 760 listing
-  shot for `CJMY212708201AZ`.
+- **Images:** one 760 × 760 supplier photo per product in `assets/` — `haven-bed`, `steamgroom`,
+  `fountain-life`, `pulse-tail` (cards) plus `harness`, `slow-feeder`, `lick-mat`, `treat-tumbler`,
+  `lure-teaser`, `scratch-board`, `litter-mat`, `carrier`, `travel-bottle`, `plush-trio`;
+  `fountain-product.jpg` is the cart thumb for the fountain. Every one is the supplier's own shot of
+  the SKU that ships (see the source URLs in the commit message). Replace, never retouch into a
+  different colourway.
 - **Colours / type:** CSS custom properties in `:root`.
 - **Illustrations:** the hero SVG and the filters cart thumbnail are still inline SVG.
 
