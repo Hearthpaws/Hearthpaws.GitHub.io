@@ -1,6 +1,6 @@
 # HearthPaws — premium pet storefront
 
-A single-file, dependency-free English storefront for a **US-market premium pet dropshipping store**.
+A single-file, dependency-free English storefront for a **premium pet dropshipping store** selling into the US, Canada, the UK, Japan, South Korea and Singapore.
 Open `index.html` in any browser — no build step, no CDN, no third-party script.
 
 - Brand: **HearthPaws** — "Premium comfort for the pets who wait for you."
@@ -198,7 +198,47 @@ quotes the old numbers — do not reuse it.
 - **The CJ title still says "squeaky duck"** while the options are elephant, monkey and poodle — the
   store copy was rewritten around the actual animals. Do not copy the CJ title.
 
-## 2. Where to source
+## 2. Shipping destinations (measured 2026-11-27)
+
+**Rule in force (user instruction, 2026-11-27):** a country is open only if CJ's freight to it is the
+same or lower than CJ's freight to the US for the same SKU — so no order can land above the landed
+cost the prices were built on.
+
+**Method.** CJdropshipping live product page → *Ship to* country → the cheapest available method and
+the "Shipping Cost" it shows (a DDU customs duty / clearance fee, where the quote adds one, is included).
+Quoted at three weights for each candidate country — the lightest line (Pulse Tail, 68 g), a mid line
+(Sisal Scratch Mat L, 777 g) and the heaviest/bulkiest (Haven Bed L, 1,402 g). US figures re-confirmed
+on the same pages and match the table in §1.
+
+| Country | 68 g — US $5.16 | 777 g — US $14.81 | 1402 g — US $24.86 | Verdict |
+|---|---|---|---|---|
+| **United Kingdom** | $3.79 | $12.06 | $19.36 | **open** (0.73–0.81 × US) |
+| **Canada** | $4.29 | $13.17 | $20.66 | **open** (0.83–0.89 × US) |
+| **Japan** | $3.81 | — | $9.47 | **open** |
+| **South Korea** | $2.55 | — | $6.40 | **open** |
+| **Singapore** | $2.92 | $6.42 | $9.78 | **open** |
+| Australia | $5.67 | — | $20.77 | closed — Pulse Tail is above the US quote |
+| Germany | $5.73 | — | — | closed — Pulse Tail above US; quote also adds customs duty + clearance |
+| France | $6.12 | — | $22.63 | closed — Pulse Tail above US; 12–20 days, customs duty + clearance added |
+
+- **Transit seen on the quotes:** UK 4–9 days (CJPacket Ordinary), Canada 4–15 (JYSP Sensitive / Ordinary),
+  Japan 4–5 (Ordinary), Singapore 5–10 (Asia Liquid / Eub), South Korea 8–12 (Eub) but **12–50 days for the
+  bed** on the heavy line. US 4–9.
+- **Middle weights are interpolated, not individually quoted.** The three measured points per country sit
+  in the same narrow band below the US rate, and the site's prices carry 4–9 % net margin, so the band is
+  the buffer. Re-quote the exact SKU in CJ before the first order to any new country; the CJ freight tables
+  are visible at checkout before payment without placing an order.
+- **Customs:** the UK, Canada and Japan quotes show no CJ customs fee line; Singapore quotes carry CJ's DDU
+  notice (buyer pays any duty on inspection, <10 % of parcels). Nothing is collected at checkout for duty.
+- **Tax registration is not handled:** selling to UK consumers (VAT on consignments ≤ £135) or EU consumers
+  (IOSS) creates obligations the store does not yet meet — one reason the EU stays closed. Canada's GST/HST
+  registration for non-resident sellers applies above a small threshold. The store is a US-first shop with
+  five extra destinations and no tax registration in any of them yet.
+- **Checkout guard:** the drawer has a *Deliver to* select listing only these six countries; the chosen
+  code is sent to PayPal in the `custom` field ("Ship to CA (Canada)") so the order mail says where it goes.
+  PayPal's Cart Upload cannot restrict the buyer's address by itself — the select is a prompt, not a lock.
+
+## 3. Where to source
 
 | Supplier | Use it for | Notes |
 |---|---|---|
@@ -212,7 +252,7 @@ re-price first are Knit Trio (4.4%), Pulse Tail (5.5%) and SteamGroom white (6.1
 
 ---
 
-## 3. Operating the store
+## 4. Operating the store
 
 1. **Order watch** — a scheduled action polls `chaeminleeandrew@gmail.com` for PayPal order mail every
    15 minutes; a real order triggers a fulfilment hand-off.
@@ -239,7 +279,7 @@ re-price first are Knit Trio (4.4%), Pulse Tail (5.5%) and SteamGroom white (6.1
 
 ---
 
-## 4. Editing the page
+## 5. Editing the page
 
 Everything lives in `index.html`.
 
@@ -249,6 +289,9 @@ Everything lives in `index.html`.
 - **Handling fee under $50:** `var SHIP_FEE = 4.95;`
 - **Cart storage key:** `hearthpaws-cart-v3` (bump it whenever the SKU list changes, so stale carts
   holding retired items are dropped).
+- **Delivery countries:** the `<select id="shipCountry">` in the drawer plus the `SHIPS_TO` map and
+  `COUNTRY_KEY` (`hearthpaws-country`). Add a country there and in §2 only after CJ quotes the whole
+  range at or below the US rate; the checkout sends the code to PayPal as `custom`.
 - **Images:** one 760 × 760 supplier photo per product in `assets/` — `haven-bed`, `steamgroom`,
   `fountain-life`, `pulse-tail` (cards) plus `harness`, `slow-feeder`, `lick-mat`, `treat-tumbler`,
   `lure-teaser`, `scratch-board`, `litter-mat`, `carrier`, `travel-bottle`, `plush-trio`;
