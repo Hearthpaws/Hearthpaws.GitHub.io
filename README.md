@@ -30,25 +30,35 @@ Landed cost = CJ item price **+ CJ shipping to a US address**, read from the liv
 
 | # | Product (store name) | CJ SKU | CJ item | CJ ship to US | Landed | Retail | Gross margin | After card fees* |
 |---|---|---|---|---|---|---|---|---|
-| 1 | **The Haven Bed** — Medium 20 in (50 cm) | `CJJJCWMY01390-Grey50cm` | $5.61 | $19.00 | **$24.61** | $89 | 72% | $61.51 (69%) |
-| 1 | **The Haven Bed** — Large 26 in (65 cm) | `CJJJCWMY01390-Grey 65cm` | $6.08 | $25.58 | **$31.66** | $109 | 71% | $73.88 (68%) |
-| 2 | **SteamGroom 3-in-1** — Ceramic white | `CJYD207827101AZ` | $3.86 | $10.07 | **$13.93** | $39 | 64% | $23.64 (61%) |
-| 2 | **SteamGroom 3-in-1** — Blush pink | `CJYD207827102BY` | $3.86 | ≈$8.90 † | **≈$12.70** | $39 | 67% | ≈$24.87 (64%) |
-| 3 | **Stillwater Fountain** — Circulation 2 L | `CJMY174605320TG` | $13.16 | $18.70 | **$31.86** | $79 | 60% | $44.55 (56%) |
-| 3 | **Stillwater Fountain** — Motion-sense 2 L | `CJMY174605325YB` | $16.92 | $19.64 | **$36.56** | $89 | 59% | $49.56 (56%) |
-| 4 | **The Pulse Tail** — Magic Tail red | `CJMY212708201AZ` | $0.95 | $5.26 | **$6.21** | $24 | 74% | $16.79 (70%) |
+| 1 | **The Haven Bed** — Medium 20 in (50 cm) | `CJJJCWMY01390-Grey50cm` | $5.61 | $19.00 | **$24.61** | $49 | 50% | $22.67 (46%) |
+| 1 | **The Haven Bed** — Large 26 in (65 cm) | `CJJJCWMY01390-Grey 65cm` | $6.08 | $25.58 | **$31.66** | $59 | 46% | $25.33 (43%) |
+| 2 | **SteamGroom 3-in-1** — Ceramic white | `CJYD207827101AZ` | $3.86 | $10.07 | **$13.93** | $24 | 42% | $9.07 (38%) |
+| 2 | **SteamGroom 3-in-1** — Blush pink | `CJYD207827102BY` | $3.86 | ≈$8.90 † | **≈$12.70** | $24 | 47% | ≈$10.30 (43%) |
+| 3 | **Stillwater Fountain** — Circulation 2 L | `CJMY174605320TG` | $13.16 | $18.70 | **$31.86** | $49 | 35% | $15.42 (31%) |
+| 3 | **Stillwater Fountain** — Motion-sense 2 L | `CJMY174605325YB` | $16.92 | $19.64 | **$36.56** | $54 | 32% | $15.57 (29%) |
+| 4 | **The Pulse Tail** — Magic Tail red | `CJMY212708201AZ` | $0.95 | $5.26 | **$6.21** | $15 | 59% | $8.05 (54%) |
 | + | **Fountain Filter Refill** (cotton set) | `CJMY174605312LO` | $2.94 | $6.47 | **$9.41** | $16 | 41% | $5.83 (36%) |
 
 \* Card fee assumed at Stripe/PayPal 2.9% + $0.30. **Ad spend is not included** — budget 15–25% of
-revenue for cold traffic. Blended AOV target **$85–$110** (bed alone $89; fountain + refill $95;
-a $39 comb plus filters crosses the $50 free-shipping line). The Pulse Tail is the low-ticket entry
-point: at $24 it is **below the $50 free-shipping line**, so it either pays the $4.95 handling fee
-(a one-ball order totals $28.95, still about 74% margin after fees) or rides along with a bigger
-order, where the handling fee disappears.
+revenue for cold traffic. With the 2026-11-27 price reset the blended AOV target is **$50–$70**
+(bed alone $49–$59; circulation fountain + refill $65; motion-sense fountain + refill $70). The Pulse
+Tail is the low-ticket entry point: at $15 it is **well below the $50 free-shipping line**, so it either
+pays the $4.95 handling fee (a one-ball order totals $19.95, still about 64% margin after fees) or
+rides along with a bigger order, where the handling fee disappears. Note the Medium Haven Bed at $49
+sits **$1 under** the $50 threshold, so a bed-only order also carries the $4.95 fee ($53.95 total)
+unless something else is added; the cart's free-shipping meter states this plainly.
 
 † Verified price/weight pairs. The Blush pink SKU is lighter (234 g vs 317 g) and its freight was
 **estimated** from the verified Ceramic white rate (317 g → $10.07); item price is verified. Treat
 pink as ≈$12.70 landed until a sample order confirms it.
+
+**Price reset — 2026-11-27.** The whole range moved to an aggressive lowest-price position:
+Haven Bed $89/$109 → **$49/$59**, Stillwater $79/$89 → **$49/$54**, SteamGroom $39 → **$24**,
+Pulse Tail $24 → **$15**. The $16 filter refill is unchanged (it keeps the highest landed-cost ratio in
+the range and is the repeat-purchase item). `FREE_SHIP = 50` and `SHIP_FEE = 4.95` were kept as they
+were. Margins above are post-reset, so the shop now runs 29–59% gross instead of 59–74% — the bet is
+volume and lower friction at the $15–$59 impulse band, not margin per unit. Any Instagram/Pinterest
+copy or image made before this date still quotes the old prices; do not reuse it.
 
 ### Sourcing notes — read before changing anything
 
@@ -124,7 +134,8 @@ pink as ≈$12.70 landed until a sample order confirms it.
 | CJ US warehouse | — | Checked and rejected for these categories (see above). Worth re-checking quarterly — US stock would cut 5–7 days off delivery. |
 
 Rule of thumb: keep the range at four hero SKUs plus one refill. Add a product only when it is a CJ
-SKU whose landed cost is ≤ 45% of the planned retail price (the Pulse Tail lands at 26% of $24).
+SKU whose landed cost is ≤ 60% of the planned retail price (the Pulse Tail lands at 41% of $15; the
+motion-sense fountain is the tightest line at 68% — check it before any ad push).
 
 ---
 
