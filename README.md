@@ -54,11 +54,13 @@ pink as ≈$12.70 landed until a sample order confirms it.
 
 **Price reset — 2026-11-27.** The whole range moved to an aggressive lowest-price position:
 Haven Bed $89/$109 → **$49/$59**, Stillwater $79/$89 → **$49/$54**, SteamGroom $39 → **$24**,
-Pulse Tail $24 → **$15**. The $16 filter refill is unchanged (it keeps the highest landed-cost ratio in
-the range and is the repeat-purchase item). `FREE_SHIP = 50` and `SHIP_FEE = 4.95` were kept as they
-were. Margins above are post-reset, so the shop now runs 29–59% gross instead of 59–74% — the bet is
-volume and lower friction at the $15–$59 impulse band, not margin per unit. Any Instagram/Pinterest
-copy or image made before this date still quotes the old prices; do not reuse it.
+Pulse Tail $24 → **$15**. The $16 filter refill is unchanged — it is the repeat-purchase item, and at
+$9.41 landed it clears about $5.83 after card fees, so keep it as an add-on rather than a hero.
+`FREE_SHIP = 50` and `SHIP_FEE = 4.95` were kept as they were. Margins above are post-reset, so the
+shop now runs 32–59% gross (29–54% after card fees) instead of 59–74% — the bet is volume and lower
+friction at the $15–$59 impulse band, not margin per unit. The motion-sense fountain is the thinnest
+line at 32%; check it before pushing it in ads. Any Instagram/Pinterest copy or image made before
+this date still quotes the old prices; do not reuse it.
 
 ### Sourcing notes — read before changing anything
 
